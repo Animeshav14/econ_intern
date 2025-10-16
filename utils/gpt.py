@@ -3,7 +3,8 @@ import os
 from openai import OpenAI
 
 # Model and API key expected via environment variables
-MODEL = os.getenv("OPENAI_MODEL", "o4-mini")
+# MODEL = os.getenv("OPENAI_MODEL", "o4-mini")
+ MODEL = st.secrets("OPENAI_MODEL", "o4-mini")
 
 _client = None
 _client_api_key = None
@@ -14,7 +15,8 @@ def get_client() -> OpenAI:
     If the environment key changes at runtime, recreate the client.
     """
     global _client, _client_api_key
-    api_key = os.getenv("OPENAI_API_KEY")
+    # api_key = os.getenv("OPENAI_API_KEY")
+    api_key = st.secrets("OPENAI_API_KEY")
     # Defensive: strip accidental surrounding quotes from .env entries
     if isinstance(api_key, str) and ((api_key.startswith('"') and api_key.endswith('"')) or (api_key.startswith("'") and api_key.endswith("'"))):
         api_key = api_key[1:-1]
