@@ -45,7 +45,7 @@ An AI-powered web application built with **Streamlit** and **OpenAI** that helps
 
 1. **Clone the repo:**
 ```bash
-git clone https://github.com/yourusername/internship-gpt.git
+git clone https://github.com/Animeshav14/econ_intern.git
 cd internship-gpt
 
 python -m venv venv
