@@ -1,6 +1,7 @@
 from typing import List, Dict
 import os
 from openai import OpenAI
+from streamlit import st
 
 # Model and API key expected via environment variables
 # MODEL = os.getenv("OPENAI_MODEL", "o4-mini")
