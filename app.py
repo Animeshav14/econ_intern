@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 import pandas as pd
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from PIL import Image
 from pathlib import Path
 import html as _html
@@ -10,7 +10,8 @@ from urllib.parse import quote_plus
 
 # Load environment early so helper modules see env vars when imported
 # Use override=True so values in .env replace any existing environment variables
-load_dotenv(override=True)
+# load_dotenv(override=True)
+
 
 from utils.gpt import chat
 from utils.sheets import load_industry_sheets
