@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 import pandas as pd
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from PIL import Image
 from pathlib import Path
 import html as _html
